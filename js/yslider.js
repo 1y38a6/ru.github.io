@@ -116,6 +116,8 @@ item.addEventListener('touchstart', function(e){
     touched = true;
     item.style.zIndex = 1000;
 
+    lastX = $("#item").offset().left;
+
     clearInterval(crPos);
 
     var coords = getCoords(item);
